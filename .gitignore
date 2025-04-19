@@ -172,3 +172,18 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Model files
+*.pt
+*.onnx
+*.engine
+*.safetensors
+
+# Evaluation artifacts
+*.png
+*.svg
+*.pdf
+*.csv
+
+# HF cache
+~/.cache/huggingface
