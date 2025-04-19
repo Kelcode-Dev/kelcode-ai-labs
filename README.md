@@ -52,5 +52,9 @@ kelcode-ai-labs/
 ├── ai-platform-architectures/    # Architecture and ops
 ├── CURRICULUM.md                 # Curriculum details, likely to change over time
 └── README.md
+```
 
 ## Contributing
+
+We welcome your feedback and improvements!
+Please read our [Contributing Guide](CONTRIBUTING.md) for details on how to report issues, submit pull requests, and follow our commit message conventions.
