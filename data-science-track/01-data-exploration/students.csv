@@ -1,0 +1,101 @@
+student_id,name,gender,age,major,gpa,credits_completed,attendance_rate,country
+S001,Chloe Abdullah,F,,Computer Science,3.91,,,Malaysia
+S002,Alice Teo,F,,Data Science,2.25,,56.8,Singapore
+S003,Daniel Lim,F,,Design,3.94,,,Malaysia
+S004,Jason Ng,M,22.0,Business,3.89,,92.2,Singapore
+S005,Ivy Abdullah,F,,Business,2.78,62.0,,Malaysia
+S006,Chloe Lim,M,,Computer Science,2.79,50.0,84.8,Malaysia
+S007,Chloe Chan,F,18.0,Business,3.0,78.0,63.5,Malaysia
+S008,Daniel Teo,F,23.0,Business,3.75,96.0,,Singapore
+S009,Chloe Tan,M,19.0,Data Science,3.2,71.0,,Indonesia
+S010,Jason Chan,F,20.0,Computer Science,3.78,,98.7,Indonesia
+S011,Jason Ng,M,,Design,2.04,78.0,,Singapore
+S012,Haziq Ng,M,21.0,Data Science,2.09,,,Indonesia
+S013,Eva Ng,M,,Design,4.0,78.0,,Indonesia
+S014,Eva Ng,M,,Design,2.27,,61.7,Indonesia
+S015,Daniel Wong,F,,Computer Science,2.84,,,Brunei
+S016,Faizal Wong,M,,Design,3.81,112.0,87.5,Malaysia
+S017,Alice Chan,M,,Data Science,2.56,76.0,53.6,Indonesia
+S018,Ivy Abdullah,M,,Computer Science,2.75,,99.2,Brunei
+S019,Grace Teo,M,,Business,3.85,,84.8,Malaysia
+S020,Haziq Teo,M,-1.0,Computer Science,1.21,200.0,,Malaysia
+S021,Alice Wong,F,,Design,3.57,57.0,,Malaysia
+S022,Alice Lim,M,,Data Science,2.85,106.0,,Indonesia
+S023,Chloe Chan,F,,Design,2.63,96.0,,Malaysia
+S024,Ivy Ng,M,,Data Science,3.46,,,Brunei
+S025,Chloe Lee,F,,Computer Science,2.73,,59.6,Indonesia
+S026,Alice Chan,F,,Data Science,3.74,90.0,,Indonesia
+S027,Grace Chan,F,23.0,Computer Science,2.06,50.0,91.9,Malaysia
+S028,Grace Lim,F,25.0,Design,2.03,95.0,,Singapore
+S029,Faizal Tan,M,24.0,Data Science,2.04,89.0,,Indonesia
+S030,Eva Lim,F,,Computer Science,3.78,75.0,64.8,Brunei
+S031,Eva Ng,F,23.0,Data Science,2.32,111.0,,Malaysia
+S032,Grace Tan,M,19.0,Design,3.22,,,Brunei
+S033,Bryan Wong,F,20.0,Design,2.79,,,Malaysia
+S034,Haziq Rahman,F,,Design,3.87,81.0,51.9,Brunei
+S035,Haziq Lim,F,23.0,Design,2.13,67.0,,Malaysia
+S036,Jason Wong,M,,Data Science,2.94,,,Indonesia
+S037,Bryan Wong,F,25.0,Computer Science,3.54,86.0,,Malaysia
+S038,Faizal Wong,F,21.0,Data Science,2.63,86.0,96.2,Singapore
+S039,Alice Teo,M,,Data Science,2.41,,78.8,Singapore
+S040,Faizal Lim,F,,Business,3.23,,150.0,Indonesia
+S041,Jason Teo,F,,Design,2.14,,90.3,Brunei
+S042,Bryan Ng,M,25.0,Data Science,2.25,,50.9,Brunei
+S043,Grace Wong,F,25.0,Data Science,3.85,,,Brunei
+S044,Bryan Lim,F,19.0,Computer Science,2.81,118.0,91.9,Indonesia
+S045,Alice Teo,F,,Business,2.57,118.0,84.3,Malaysia
+S046,Haziq Lim,F,24.0,Design,2.73,74.0,,Brunei
+S047,Faizal Ng,F,,Business,3.1,85.0,,Indonesia
+S048,Faizal Lim,M,,Computer Science,3.69,,,Indonesia
+S049,Bryan Lim,M,20.0,Data Science,2.09,51.0,80.7,Singapore
+S050,Bryan Lim,F,25.0,Business,2.18,,99.1,Brunei
+S051,Grace Rahman,M,,Business,3.48,56.0,,Indonesia
+S052,Eva Teo,F,21.0,Computer Science,3.05,110.0,70.7,Indonesia
+S053,Ivy Lee,M,25.0,Data Science,3.7,83.0,63.9,Indonesia
+S054,Faizal Lim,M,,Business,3.18,78.0,79.2,Singapore
+S055,Ivy Wong,F,22.0,Computer Science,3.9,106.0,,Brunei
+S056,Haziq Ng,F,,Design,2.16,,,Brunei
+S057,Chloe Tan,F,19.0,Design,2.85,,,Singapore
+S058,Bryan Rahman,F,19.0,Business,3.34,,91.5,Singapore
+S059,Eva Teo,F,,Business,2.6,75.0,,Malaysia
+S060,Daniel Abdullah,M,-1.0,Computer Science,3.82,200.0,-5.0,Brunei
+S061,Eva Rahman,F,20.0,Design,3.16,,,Brunei
+S062,Eva Abdullah,M,20.0,Data Science,2.89,,,Brunei
+S063,Jason Teo,M,22.0,Data Science,3.73,75.0,,Singapore
+S064,Daniel Rahman,F,,Design,2.36,,70.8,Brunei
+S065,Jason Lim,M,21.0,Design,3.42,,82.0,Indonesia
+S066,Haziq Lim,F,19.0,Design,3.22,,,Malaysia
+S067,Eva Lim,F,23.0,Business,2.03,,50.2,Brunei
+S068,Grace Teo,F,,Business,2.14,90.0,,Malaysia
+S069,Daniel Abdullah,M,19.0,Computer Science,2.79,99.0,,Brunei
+S070,Ivy Abdullah,F,20.0,Data Science,3.34,,60.1,Indonesia
+S071,Eva Tan,F,,Business,3.56,95.0,99.9,Singapore
+S072,Daniel Abdullah,M,,Business,3.32,116.0,,Indonesia
+S073,Haziq Abdullah,M,21.0,Computer Science,2.31,,73.5,Brunei
+S074,Ivy Chan,F,22.0,Data Science,2.92,106.0,,Brunei
+S075,Daniel Lim,F,22.0,Business,2.26,,97.2,Brunei
+S076,Daniel Rahman,F,,Business,2.87,,,Singapore
+S077,Alice Wong,M,,Computer Science,2.99,64.0,,Malaysia
+S078,Chloe Chan,M,23.0,Data Science,3.81,72.0,,Singapore
+S079,Alice Lee,F,,Business,2.07,,,Indonesia
+S080,Jason Chan,F,,Design,1.87,,150.0,Indonesia
+S081,Daniel Lim,F,,Business,2.91,87.0,66.3,Singapore
+S082,Chloe Lee,M,22.0,Data Science,2.36,50.0,,Indonesia
+S083,Eva Rahman,M,21.0,Design,3.81,,58.9,Brunei
+S084,Grace Lee,M,25.0,Business,3.59,81.0,,Singapore
+S085,Ivy Chan,F,,Data Science,2.72,,92.2,Indonesia
+S086,Ivy Lim,M,,Business,3.92,51.0,96.8,Indonesia
+S087,Faizal Lim,F,,Data Science,2.91,,52.1,Brunei
+S088,Faizal Lim,M,,Data Science,2.46,106.0,86.5,Brunei
+S089,Daniel Lim,F,,Design,2.57,107.0,77.5,Singapore
+S090,Ivy Lee,F,,Business,2.25,,,Indonesia
+S091,Haziq Wong,M,,Design,2.75,119.0,,Indonesia
+S092,Alice Rahman,F,22.0,Data Science,2.87,78.0,50.6,Singapore
+S093,Faizal Rahman,F,18.0,Business,3.35,,87.2,Malaysia
+S094,Grace Rahman,F,,Data Science,3.15,82.0,,Indonesia
+S095,Haziq Lim,M,21.0,Computer Science,3.55,83.0,99.3,Malaysia
+S096,Jason Lim,M,,Business,2.78,62.0,50.0,Malaysia
+S097,Ivy Abdullah,M,,Data Science,2.73,,,Indonesia
+S098,Haziq Tan,F,21.0,Computer Science,3.99,89.0,,Singapore
+S099,Faizal Teo,M,,Computer Science,2.81,52.0,,Indonesia
+S100,Eva Lim,F,100.0,Design,3.47,-10.0,-5.0,Brunei
