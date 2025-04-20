@@ -50,7 +50,17 @@ Potential future exploration:
 
 ## Requirements
 
-Python 3.x
+Python 3.11
+
+If you use an venv (I do) the run the following before installing the requirements:
+
+```bash
+cd data-science-track/01-data-exploration
+python -m venv .venv
+source .venv/bin/activate
+```
+
+Install the requirements
 
 ```bash
 pip install -r requirements.txt
