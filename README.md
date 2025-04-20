@@ -54,6 +54,10 @@ kelcode-ai-labs/
 └── README.md
 ```
 
+## 📚 Articles in the Series
+
+1. [Embarking on an AI Engineering Journey: From Data to Deployment](https://kelcode.co.uk/embarking-on-an-ai-engineering-journey)
+
 ## Contributing
 
 We welcome your feedback and improvements!

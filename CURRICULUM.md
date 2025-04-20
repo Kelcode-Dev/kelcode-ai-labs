@@ -1,5 +1,6 @@
 # AI Engineering & Data Science Curriculum
-### For Platform Builders
+
+The following is a high level curriculum that I am going through in an effort to teach myself about all aspects of AI from data exploration to running a fully fledged LLM in a cloud environment with GPU nodes... let's see how it goes and chances are it will change and evolve as I go through the various labs and come across new and interesting things.
 
 ## Module 1 — Foundations of AI Modelling
 
