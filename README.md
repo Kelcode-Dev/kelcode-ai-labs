@@ -8,12 +8,12 @@ Articles supporting this repo can be found at [kelcode.co.uk](https://kelcode.co
 
 This repository supports an end-to-end AI curriculum, structured into four modules:
 
-| Module | Focus                         | Status          | Details                                 |
-|--------|-------------------------------|-----------------|-----------------------------------------|
-| 1      | Foundations of AI Modelling   | 🔜 Coming Soon  | [CURRICULUM.md#module-1]                |
-| 2      | Data Science & Modelling      | ✅ In progress  | [CURRICULUM.md#module-2]                |
-| 3      | AI Engineering & Deployment   | 🔜 Coming Soon  | [CURRICULUM.md#module-3]                |
-| 4      | Advanced AI Platform Arch.    | 🔜 Coming Soon  | [CURRICULUM.md#module-4]                |
+| Module | Focus                         | Status          |
+|--------|-------------------------------|-----------------|
+| 1      | Foundations of AI Modelling   | 🔜 Coming Soon  |
+| 2      | Data Science & Modelling      | ✅ In progress  |
+| 3      | AI Engineering & Deployment   | 🔜 Coming Soon  |
+| 4      | Advanced AI Platform Arch.    | 🔜 Coming Soon  |
 
 For the full details, check out the [CURRICULUM.md] doc
 
