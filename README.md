@@ -11,10 +11,11 @@ This repository supports an end-to-end AI curriculum, structured into four modul
 | Module | Focus                         | Status          | Details                                 |
 |--------|-------------------------------|-----------------|-----------------------------------------|
 | 1      | Foundations of AI Modelling   | 🔜 Coming Soon  | [CURRICULUM.md#module-1]                |
-| 2      | Data Science & Modelling      | ✅ Live         | [Module 2 Labs](CURRICULUM.md#module-2) |
+| 2      | Data Science & Modelling      | ✅ In progress  | [CURRICULUM.md#module-2]                |
 | 3      | AI Engineering & Deployment   | 🔜 Coming Soon  | [CURRICULUM.md#module-3]                |
 | 4      | Advanced AI Platform Arch.    | 🔜 Coming Soon  | [CURRICULUM.md#module-4]                |
 
+For the full details, check out the [CURRICULUM.md] doc
 
 ### 📦 Module 1: Foundations of AI Modelling
 - AI lifecycle walkthrough
@@ -57,6 +58,8 @@ kelcode-ai-labs/
 ## 📚 Articles in the Series
 
 1. [Embarking on an AI Engineering Journey: From Data to Deployment](https://kelcode.co.uk/embarking-on-an-ai-engineering-journey)
+2. [Machine Learning: Building Our First Classifier with Scikit-Learn](https://kelcode.co.uk/classical-machine-learning-iris-dataset-and-scikitlearn/)
+3. Deep Learning: Training Our First Model - Coming soon!
 
 ## Contributing
 
