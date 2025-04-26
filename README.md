@@ -61,7 +61,8 @@ kelcode-ai-labs/
 2. [Machine Learning: Building Our First Classifier with Scikit-Learn](https://kelcode.co.uk/classical-machine-learning-iris-dataset-and-scikitlearn/)
 3. [Deep Learning: Training Our First Model](https://kelcode.co.uk/deep-learning-training-our-first-model/)
 4. [Fine-Tuning a Model with LoRA](https://kelcode.co.uk/fine-tuning-a-model-with-lora/)
-5. Quantising a model - coming soon!
+5. [Quantisation in Deep Learning: A Practical Lab Guide](https://kelcode.co.uk/quantisation-in-deep-learning/)
+6. Model and Quantisation Debugging - Coming Soon!
 
 ## Contributing
 
