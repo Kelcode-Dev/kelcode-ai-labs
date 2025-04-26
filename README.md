@@ -59,7 +59,9 @@ kelcode-ai-labs/
 
 1. [Embarking on an AI Engineering Journey: From Data to Deployment](https://kelcode.co.uk/embarking-on-an-ai-engineering-journey)
 2. [Machine Learning: Building Our First Classifier with Scikit-Learn](https://kelcode.co.uk/classical-machine-learning-iris-dataset-and-scikitlearn/)
-3. Deep Learning: Training Our First Model - Coming soon!
+3. [Deep Learning: Training Our First Model](https://kelcode.co.uk/deep-learning-training-our-first-model/)
+4. [Fine-Tuning a Model with LoRA](https://kelcode.co.uk/fine-tuning-a-model-with-lora/)
+5. Quantising a model - coming soon!
 
 ## Contributing
 
