@@ -50,11 +50,11 @@ Top Predictions: [('World', np.float32(0.998)), ('Sports', np.float32(0.0012)), 
 
 This clearly shows an issue with the tensorrt quantised model as health nor security even begin to come into the mix where as the pytorch and Optium quantised models both select health and at a minimum consider security.
 
-This suggests our original lora model training indeed weighted terms like the NHS with the Health cateogry for UK news ... makes sense right?!
+This suggests our original LoRA model training indeed weighted terms like the NHS with the Health cateogry for UK news ... makes sense right?!
 
 The other observation is the general shape of the logits being returned for each quantised model
 
-![Logits Plot](logits_line_chart.png)
+![Logits Plot](charts/logits_line_chart.png)
 
 This shows the overall shape of the torch and Optimium quantised models are alomst identical but the tensorrt model is waaaaaaaay off ... next steps find out why!!
 
@@ -62,11 +62,11 @@ This shows the overall shape of the torch and Optimium quantised models are alom
 
 Recap:
 
->In the lab04/quantisation we leveraged tensorrt to quantised the lora trainined mode which contains an interim step for the production of an onnx model.onnx which is then used to generate the model_fp16.engine model
+>In the lab04/quantisation we leveraged tensorrt to quantised the LoRA trainined mode which contains an interim step for the production of an onnx model.onnx which is then used to generate the model_fp16.engine model
 
 The first thing for to do is understand where the problem lies:
 
-1. lora -> onnx model conversion
+1. LoRA -> onnx model conversion
 2. onxx model -> tensorrt quantisation
 
 Running `inspect_onnx.py` shows the following things:
@@ -139,9 +139,9 @@ First few values:
 [ 0.0234  0.017   0.0017  0.0268 -0.0171 -0.0323 -0.0145 -0.0149 -0.0153]
 ```
 
-Strangely, this shows that the onnx model actually contains the 9 output rows (expected) and the 768 dimensional token embeddings (columns) across these 9 labels which confirms the onnx model was produced from our lora trained model.
+Strangely, this shows that the onnx model actually contains the 9 output rows (expected) and the 768 dimensional token embeddings (columns) across these 9 labels which confirms the onnx model was produced from our LoRA trained model.
 
-Next we run our debug_logits script against the onnx model to see what our test line produces when fed into that model and see if the classification head is truely missing ...
+Next we run our debug_logits script against the onnx model to see what our test line produces when fed into that model and see if the classification head is truly missing ...
 
 ```
 $ python debug_logits_onnx.py
@@ -156,7 +156,7 @@ Top Predictions:
 - security     0.0017
 ```
 
-![Logits Plot](onnx_logits_line_chart.png)
+![Logits Plot](charts/rebuild_logits_line_chart.png)
 
 This produces the same result as the other torch and optimum quantised models and the shape is the same too so the problem has to lie in the tensorrt quantisation of the onnx model.
 
@@ -201,21 +201,21 @@ Rebuilding again with int32 produces the following:
 ```
 $ python rebuild_engine_32.py
 Exporting ONNX model...
-✅ ONNX model saved to /home/gizzmo/development/personal/ai/ai-learning-playground/02-data-science-track/06-model-debugging/tensorrt/requantised-tensorrt/model.onnx
+✅ ONNX model saved to ./05-model-debugging-tensorrt-fp16engine/requantised-tensorrt/model.onnx
 Validating ONNX model...
 
 Validating ONNX model logits...
 ONNX Logits: [-3.3151 -6.4886 -9.0523 -2.7598  2.521   4.5606  7.4545  1.1573  1.5208]
 Top Predictions: [('health', np.float32(0.9371)), ('education', np.float32(0.0519)), ('climate', np.float32(0.0067)), ('tech-policy', np.float32(0.0025)), ('security', np.float32(0.0017))]
 Building TensorRT engine...
-✅ Engine saved to /home/gizzmo/development/personal/ai/ai-learning-playground/02-data-science-track/06-model-debugging/tensorrt/requantised-tensorrt/model_fp16.engine
+✅ Engine saved to ./05-model-debugging-tensorrt-fp16engine/requantised-tensorrt/model_fp16.engine
 
 [TensorRT FP16 Inference Result]
 Logits: [-3.3164 -6.4961 -9.0391 -2.7578  2.5156  4.5586  7.4727  1.1562  1.5117]
 Top Predictions: [('health', np.float32(0.9383)), ('education', np.float32(0.0509)), ('climate', np.float32(0.0066)), ('tech-policy', np.float32(0.0024)), ('security', np.float32(0.0017))]
 ```
 
-This is the perfect output as it shows the newly build quantised tensorrt model is performing the right now and matches the output from the onnx model and more importantly our other torch and Optimium models.
+This is the perfect output as it shows the newly build quantised tensorrt model is performing the right now and matches the output from the ONNX model and more importantly our other Torch and Optimum models.
 
 ## The Final Predict Results
 
@@ -223,9 +223,9 @@ Leveraging the same predict.py script we built in lab04 we get the following res
 
 | headline                                                     | model             | true_label   | predicted_label   |   prediction_time | predict_1          | predict_2            | predict_3            | predict_4            | predict_5            |
 |--------------------------------------------------------------|-------------------|--------------|-------------------|-------------------|--------------------|----------------------|----------------------|----------------------|----------------------|
-| Cybersecurity breach exposes NHS patient records             | PyTorch Quantised | health       | health            |            1.4163 | health (0.9371)    | education (0.0519)   | climate (0.0067)     | tech-policy (0.0025) | security (0.0017)    |
-| Cybersecurity breach exposes NHS patient records             | ONNX Quantised    | health       | health            |            0.0515 | health (0.7760)    | education (0.1883)   | climate (0.0256)     | security (0.0051)    | tech-policy (0.0049) |
-| Cybersecurity breach exposes NHS patient records             | TensorRT FP16     | health       | health            |            0.0843 | health (0.9383)    | education (0.0509)   | climate (0.0066)     | tech-policy (0.0024) | security (0.0017)    |
+| Cybersecurity breach exposes NHS patient records             | PyTorch Quantised | security       | health            |            1.4163 | health (0.9371)    | education (0.0519)   | climate (0.0067)     | tech-policy (0.0025) | security (0.0017)    |
+| Cybersecurity breach exposes NHS patient records             | ONNX Quantised    | security       | health            |            0.0515 | health (0.7760)    | education (0.1883)   | climate (0.0256)     | security (0.0051)    | tech-policy (0.0049) |
+| Cybersecurity breach exposes NHS patient records             | TensorRT FP16     | security       | health            |            0.0843 | health (0.9383)    | education (0.0509)   | climate (0.0066)     | tech-policy (0.0024) | security (0.0017)    |
 | AI tutor program set to roll out in Scottish schools         | PyTorch Quantised | education    | education         |            0.8003 | education (0.9996) | tech-policy (0.0002) | health (0.0001)      | climate (0.0000)     | World (0.0000)       |
 | AI tutor program set to roll out in Scottish schools         | ONNX Quantised    | education    | education         |            0.0523 | education (0.9995) | tech-policy (0.0002) | health (0.0002)      | climate (0.0001)     | World (0.0001)       |
 | AI tutor program set to roll out in Scottish schools         | TensorRT FP16     | education    | education         |            0.074  | education (0.9996) | tech-policy (0.0002) | health (0.0001)      | climate (0.0000)     | World (0.0000)       |
@@ -247,21 +247,3 @@ This confirms that our newly rebuilt TensorRT engine using an int32 ONNX model i
 It's still interesting that the cybersecurity headlines are labelled as health while security is barely makes the top5 predictions across any of the models but this has to be training data related and not an issue with the prediction mechanism / models themselves.
 
 This concludes the TensorRT investigation in Lab 06. We've now confirmed both accuracy and consistency across inference backends and identified the precise cause of earlier logit divergence. The system is stable, validated, and ready to build on.
-
-
-## Next Steps
-
-Lab 07: Improving Quality Across All Labels
-
-* Revisit imbalance or misclassifications (e.g. education/health confusion)
-* Try label smoothing, calibration, weighted loss
-* Potentially improve classifier head or retrain with data augmentation
-* Use your prediction benchmark table for before/after analysis
-
-Lab 08: Complex Dataset Challenge: Quiz-Generating LLM
-
-* Train a domain-aware language model (or prompt-engineer one) to:
-* Understand a curriculum structure (e.g. learning objectives)
-* Generate questions aligned to it (Bloom's taxonomy?)
-* Handle format constraints (MCQ, open-ended, rubric tags)
-* Focus on data preparation + generation quality, not just accuracy
