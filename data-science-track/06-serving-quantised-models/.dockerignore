@@ -1,0 +1,32 @@
+# Python cache & bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Your virtual-env
+.venv/
+env/
+venv/
+
+# Editor/IDE cruft
+*.swp
+*.swo
+*.sublime-*
+.vscode/
+.idea/
+
+# Git and CI
+.git/
+.gitignore
+.github/
+.gitlab-ci.yml
+
+# Local configs, logs, docs
+.env
+*.log
+*.sqlite3
+plan.md
+
+# OS files
+.DS_Store
+Thumbs.db

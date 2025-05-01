@@ -47,8 +47,10 @@ Each module with it's own set of labs and readmes supporting those particular la
 kelcode-ai-labs/
 ├── foundations-ai-modelling/     # Foundational concepts and lifecycle labs
 ├── data-science-track/           # Modelling-focused labs (LoRA, quant, ONNX, etc.)
-│   ├── lab04-optimum.py
-│   └── lab05-eval.py
+│   ├── lab01
+│   ├── lab02
+│   ├── lab03
+│   └── ...
 ├── ai-engineering-track/         # Engineering labs (APIs, inference, k8s)
 ├── ai-platform-architectures/    # Architecture and ops
 ├── CURRICULUM.md                 # Curriculum details, likely to change over time
@@ -63,7 +65,8 @@ kelcode-ai-labs/
 4. [Fine-Tuning a Model with LoRA](https://kelcode.co.uk/fine-tuning-a-model-with-lora/)
 5. [Quantisation in Deep Learning: A Practical Lab Guide](https://kelcode.co.uk/quantisation-in-deep-learning/)
 6. [Debugging and Repairing Tensorrt Inference](https://kelcode.co.uk/debugging-and-repairing-tensorrt-inference/)
-7. Deploying Quantised Models using FastAPI - Coming Soon!
+7. [Serving Quantised Models with FastAPI](https://kelcode.co.uk/serving-quantised-models-with-fastapi)
+8. Real world Retrieval‐Augmented Q&A example - Coming Soon!
 
 ## Contributing
 

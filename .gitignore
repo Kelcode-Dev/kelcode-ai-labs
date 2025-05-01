@@ -184,3 +184,9 @@ __pycache__/
 
 # HF cache
 ~/.cache/huggingface
+
+# Ignore all files in models/
+**/models/**
+
+# But don’t ignore the .gitkeep so the folder stays in Git
+!**/models/.gitkeep

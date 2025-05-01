@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Headline Classifier</title>
+  <meta name="description" content="Classify news headlines using different models" />
+  <meta name="author" content="Kelcode Development">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body class="bg-light">
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6">
+
+        <div class="card shadow-sm mt-5">
+          <div class="card-body">
+            <h1 class="card-title text-center mb-4"><i class="bi bi-newspaper"></i> Headline Classifier</h1>
+
+            <form id="classify-form" class="mb-4">
+              <div class="mb-3">
+                <label for="model-select" class="form-label">Model</label>
+                <select id="model-select" class="form-select" required>
+                  <option value="onnx">ONNX</option>
+                  <option value="torch" selected>TorchScript</option>
+                  <option value="trt_fp16">TensorRT FP16</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="headline" class="form-label">Headline</label>
+                <input
+                  id="headline"
+                  type="text"
+                  class="form-control"
+                  placeholder="e.g. AI tutor program set to roll out in Scottish schools"
+                  required
+                />
+              </div>
+
+              <div class="form-check mb-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="top5-check"
+                />
+                <label class="form-check-label small" for="top5-check">
+                  Show Top 5
+                </label>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Classify</button>
+            </form>
+
+            <div id="result" class="result-card text-center">
+              <p class="text-muted">Your result will appear here.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <footer class="footer text-center mt-4 mb-2 text-muted small">
+      Made with <i class="bi bi-heart-fill text-danger"></i> by Kelcode Development
+      <i class="bi bi-dot"></i>
+      Part of the
+      <a href="https://kelcode.co.uk/tag/ai-labs/" target="_blank" rel="noopener">
+        Kelcode AI Labs Journey
+      </a>
+      <i class="bi bi-dot"></i>
+      <a href="https://github.com/Kelcode-Dev/kelcode-ai-labs" title="Github Repository" target="_blank" rel="noopener">
+        GitHub Repository
+      </a>
+    </footer>
+  </div>
+
+  <script src="/static/main.js"></script>
+</body>
+</html>
