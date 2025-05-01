@@ -62,7 +62,8 @@ kelcode-ai-labs/
 3. [Deep Learning: Training Our First Model](https://kelcode.co.uk/deep-learning-training-our-first-model/)
 4. [Fine-Tuning a Model with LoRA](https://kelcode.co.uk/fine-tuning-a-model-with-lora/)
 5. [Quantisation in Deep Learning: A Practical Lab Guide](https://kelcode.co.uk/quantisation-in-deep-learning/)
-6. Model and Quantisation Debugging - Coming Soon!
+6. [Debugging and Repairing Tensorrt Inference](https://kelcode.co.uk/debugging-and-repairing-tensorrt-inference/)
+7. Deploying Quantised Models using FastAPI - Coming Soon!
 
 ## Contributing
 
