@@ -65,8 +65,9 @@ kelcode-ai-labs/
 4. [Fine-Tuning a Model with LoRA](https://kelcode.co.uk/fine-tuning-a-model-with-lora/)
 5. [Quantisation in Deep Learning: A Practical Lab Guide](https://kelcode.co.uk/quantisation-in-deep-learning/)
 6. [Debugging and Repairing Tensorrt Inference](https://kelcode.co.uk/debugging-and-repairing-tensorrt-inference/)
-7. [Serving Quantised Models with FastAPI](https://kelcode.co.uk/serving-quantised-models-with-fastapi)
-8. Real world Retrieval‐Augmented Q&A example - Coming Soon!
+7. [Serving Quantised Models with FastAPI](https://kelcode.co.uk/serving-quantised-models-with-fastapi/)
+8. [Building a Homelab RAG](https://kelcode.co.uk/building-a-homelab-rag/)
+9. Evaluating a RAG system - Coming Soon!
 
 ## Contributing
 
