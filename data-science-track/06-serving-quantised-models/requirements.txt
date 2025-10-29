@@ -47,7 +47,7 @@ regex==2024.11.6
 requests==2.32.3
 safetensors==0.5.3
 sniffio==1.3.1
-starlette==0.46.2
+starlette==0.49.1
 sympy==1.14.0
 tensorrt==10.9.0.34
 tensorrt-cu12==10.9.0.34
