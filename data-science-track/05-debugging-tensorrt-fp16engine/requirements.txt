@@ -37,7 +37,7 @@ onnxruntime==1.21.1
 packaging==24.2
 pillow==11.3.0
 platformdirs==4.3.7
-protobuf==6.31.1
+protobuf==6.33.5
 pycuda==2025.1
 pyparsing==3.2.3
 python-dateutil==2.9.0.post0
