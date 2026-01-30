@@ -35,7 +35,7 @@ nvidia-nvtx-cu12==12.6.77
 onnxruntime==1.21.1
 packaging==25.0
 platformdirs==4.3.7
-protobuf==6.31.1
+protobuf==6.33.5
 pycuda==2025.1
 pydantic==2.11.4
 pydantic-settings==2.9.1
