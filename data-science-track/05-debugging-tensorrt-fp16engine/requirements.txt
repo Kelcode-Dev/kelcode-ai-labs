@@ -9,7 +9,7 @@ fonttools==4.60.2
 fsspec==2025.3.2
 huggingface-hub==0.30.2
 humanfriendly==10.0
-idna==3.10
+idna==3.15
 Jinja2==3.1.6
 joblib==1.4.2
 kiwisolver==1.4.8
@@ -57,7 +57,7 @@ tensorrt_cu12_bindings==10.9.0.34
 tensorrt_cu12_libs==10.9.0.34
 threadpoolctl==3.6.0
 tokenizers==0.21.1
-torch==2.8.0
+torch==2.12.0
 tqdm==4.67.1
 transformers==5.0.0rc3
 triton==3.2.0
