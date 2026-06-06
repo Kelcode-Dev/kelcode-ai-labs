@@ -44,7 +44,7 @@ peft==0.15.1
 pillow==12.2.0
 propcache==0.3.1
 psutil==7.0.0
-pyarrow==19.0.1
+pyarrow==23.0.1
 pyparsing==3.2.3
 python-dateutil==2.9.0.post0
 pytz==2025.2
