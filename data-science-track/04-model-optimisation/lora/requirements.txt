@@ -1,6 +1,6 @@
 accelerate==1.6.0
 aiohappyeyeballs==2.6.1
-aiohttp==3.14.1
+aiohttp==3.14.3
 aiosignal==1.3.2
 attrs==25.3.0
 certifi==2025.1.31
@@ -41,7 +41,7 @@ nvidia-nvtx-cu12==12.4.127
 packaging==24.2
 pandas==2.2.3
 peft==0.15.1
-pillow==12.2.0
+pillow==12.3.0
 propcache==0.3.1
 psutil==7.0.0
 pyarrow==23.0.1
@@ -59,9 +59,9 @@ six==1.17.0
 sympy==1.13.1
 threadpoolctl==3.6.0
 tokenizers==0.15.2
-torch==2.12.1
+torch==2.13.0
 tqdm==4.67.1
-transformers==5.8.1
+transformers==5.14.1
 triton==3.2.0
 typing_extensions==4.13.2
 tzdata==2025.2
